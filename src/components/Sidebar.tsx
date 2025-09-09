@@ -150,6 +150,11 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
       label: '直播',
       href: '/live',
     },
+    {
+      icon: Settings,
+      label: 'TVBox配置',
+      href: '/config',
+    },
   ]);
 
   useEffect(() => {
