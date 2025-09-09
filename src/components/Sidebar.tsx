@@ -151,7 +151,7 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
       href: '/live',
     },
     {
-      icon: Settings,
+      icon: Setting,
       label: 'TVBox配置',
       href: '/config',
     },
