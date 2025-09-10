@@ -4615,6 +4615,13 @@ function AdminPageClient() {
                 重置配置
               </button>
             )}
+              <button
+              onClick={() => router.push('/config')}
+              className='px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded-md transition-colors flex items-center gap-1'
+            >
+              <Tv size={14} />
+              <span>TVBox 配置</span>
+            </button>
           </div>
 
           {/* 配置文件标签 - 仅站长可见 */}
