@@ -38,6 +38,7 @@ import {
   Video,
 } from 'lucide-react';
 import { GripVertical } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 import { Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -4490,6 +4491,7 @@ const LiveSourceConfig = ({
 };
 
 function AdminPageClient() {
+  const router = useRouter();
   const { alertModal, showAlert, hideAlert } = useAlertModal();
   const { isLoading, withLoading } = useLoadingState();
   const [config, setConfig] = useState<AdminConfig | null>(null);
